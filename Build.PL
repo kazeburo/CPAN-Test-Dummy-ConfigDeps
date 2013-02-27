@@ -1,6 +1,7 @@
 use strict;
 use warnings;
 use Module::Build;
+use Module::CPANfile;
 
 my $build = Module::Build->new(
     license              => 'perl',
@@ -10,7 +11,10 @@ my $build = Module::Build->new(
         'Test::More' => '0.98',
         'Test::Requires' => 0,
     },
-    configure_requires   => { 'Module::Build' => '0.38' },
+    configure_requires   => {
+        'Module::Build' => '0.38',
+        'Module::CPANfile' => '0.9010',
+    },
     requires             => {
         perl => '5.008005',
         # 'Exporter'                      => '0',
@@ -22,12 +26,5 @@ my $build = Module::Build->new(
     name        => 'CPAN-Test-Dummy-ConfigDeps',
     module_name => 'CPAN::Test::Dummy::ConfigDeps',
 
-    # script_files => [''],
-
-    test_files => (-d '.git' || $ENV{RELEASE_TESTING}) ? 't/ xt/' : 't/',
-    recursive_test_files => 1,
-   
-    create_readme  => 1,
-    create_license => 1,
 );
 $build->create_build_script();

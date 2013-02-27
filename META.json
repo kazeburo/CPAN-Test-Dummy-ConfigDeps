@@ -1,0 +1,54 @@
+{
+   "abstract" : "...",
+   "author" : [
+      "Masahiro Nagano E<lt>kazeburo@gmail.comE<gt>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "CPAN-Test-Dummy-ConfigDeps",
+   "no_index" : {
+      "directory" : [
+         "inc"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.98",
+            "Test::Requires" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38",
+            "Module::CPANfile" : "0.9010"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "parent" : "0",
+            "perl" : "5.008005"
+         }
+      }
+   },
+   "provides" : {
+      "CPAN::Test::Dummy::ConfigDeps" : {
+         "file" : "lib/CPAN/Test/Dummy/ConfigDeps.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}

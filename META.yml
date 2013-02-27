@@ -1,0 +1,30 @@
+---
+abstract: '...'
+author:
+  - 'Masahiro Nagano E<lt>kazeburo@gmail.comE<gt>'
+build_requires:
+  Test::More: 0.98
+  Test::Requires: 0
+configure_requires:
+  Module::Build: 0.38
+  Module::CPANfile: 0.9010
+dynamic_config: 0
+generated_by: 'Module::Build version 0.4003, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: CPAN-Test-Dummy-ConfigDeps
+no_index:
+  directory:
+    - inc
+provides:
+  CPAN::Test::Dummy::ConfigDeps:
+    file: lib/CPAN/Test/Dummy/ConfigDeps.pm
+    version: 0.01
+requires:
+  parent: 0
+  perl: 5.008005
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01

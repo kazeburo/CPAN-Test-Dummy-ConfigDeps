@@ -1,1 +1,0 @@
-lib/CPAN/Test/Dummy/ConfigDeps.pm
